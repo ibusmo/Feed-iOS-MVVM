@@ -1,14 +1,14 @@
 //
-//  MainFeedTableViewCell.m
+//  FeedHeaderTableViewCell.m
 //  Feed-iOS-MVVM
 //
-//  Created by Cpt. Omsub Sukkhee on 4/27/17.
+//  Created by Omsub Sukkhee on 4/28/17.
 //  Copyright © 2017 omsub. All rights reserved.
 //
 
-#import "MainFeedTableViewCell.h"
+#import "FeedHeaderTableViewCell.h"
 
-@implementation MainFeedTableViewCell
+@implementation FeedHeaderTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

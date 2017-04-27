@@ -16,8 +16,19 @@
 		1F4800701EB1A67500D59AAD /* Feed_iOS_MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F48006F1EB1A67500D59AAD /* Feed_iOS_MVVMTests.m */; };
 		1F48007B1EB1A67500D59AAD /* Feed_iOS_MVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F48007A1EB1A67500D59AAD /* Feed_iOS_MVVMUITests.m */; };
 		1F48008E1EB1B3B500D59AAD /* MainFeedMockup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F48008D1EB1B3B500D59AAD /* MainFeedMockup.xib */; };
-		1F4800921EB1F16A00D59AAD /* MainFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4800901EB1F16A00D59AAD /* MainFeedTableViewCell.m */; };
-		1F4800931EB1F16A00D59AAD /* MainFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4800911EB1F16A00D59AAD /* MainFeedTableViewCell.xib */; };
+		1F8F4D371EB2621100CDCB72 /* FeedHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D351EB2621100CDCB72 /* FeedHeaderTableViewCell.m */; };
+		1F8F4D381EB2621100CDCB72 /* FeedHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F4D361EB2621100CDCB72 /* FeedHeaderTableViewCell.xib */; };
+		1F8F4D3C1EB2665000CDCB72 /* FeedImageContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D3A1EB2665000CDCB72 /* FeedImageContentTableViewCell.m */; };
+		1F8F4D3D1EB2665000CDCB72 /* FeedImageContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F4D3B1EB2665000CDCB72 /* FeedImageContentTableViewCell.xib */; };
+		1F8F4D411EB2678700CDCB72 /* FeedButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D3F1EB2678700CDCB72 /* FeedButtonTableViewCell.m */; };
+		1F8F4D421EB2678700CDCB72 /* FeedButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F4D401EB2678700CDCB72 /* FeedButtonTableViewCell.xib */; };
+		1F8F4D461EB275E700CDCB72 /* FeedCaptionContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D441EB275E700CDCB72 /* FeedCaptionContentTableViewCell.m */; };
+		1F8F4D471EB275E700CDCB72 /* FeedCaptionContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F4D451EB275E700CDCB72 /* FeedCaptionContentTableViewCell.xib */; };
+		1F8F4D4B1EB2781700CDCB72 /* FeedSeparatorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D491EB2781700CDCB72 /* FeedSeparatorTableViewCell.m */; };
+		1F8F4D4C1EB2781700CDCB72 /* FeedSeparatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F4D4A1EB2781700CDCB72 /* FeedSeparatorTableViewCell.xib */; };
+		1F8F4D551EB27D0700CDCB72 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D531EB27D0700CDCB72 /* FeedTableViewController.m */; };
+		1F8F4D561EB27D0700CDCB72 /* FeedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F4D541EB27D0700CDCB72 /* FeedTableViewController.xib */; };
+		1F8F4D591EB28D6800CDCB72 /* FeedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D581EB28D6800CDCB72 /* FeedViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +66,27 @@
 		1F48007A1EB1A67500D59AAD /* Feed_iOS_MVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feed_iOS_MVVMUITests.m; sourceTree = "<group>"; };
 		1F48007C1EB1A67500D59AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F48008D1EB1B3B500D59AAD /* MainFeedMockup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedMockup.xib; sourceTree = "<group>"; };
-		1F48008F1EB1F16A00D59AAD /* MainFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedTableViewCell.h; sourceTree = "<group>"; };
-		1F4800901EB1F16A00D59AAD /* MainFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedTableViewCell.m; sourceTree = "<group>"; };
-		1F4800911EB1F16A00D59AAD /* MainFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedTableViewCell.xib; sourceTree = "<group>"; };
+		1F8F4D341EB2621100CDCB72 /* FeedHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedHeaderTableViewCell.h; sourceTree = "<group>"; };
+		1F8F4D351EB2621100CDCB72 /* FeedHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedHeaderTableViewCell.m; sourceTree = "<group>"; };
+		1F8F4D361EB2621100CDCB72 /* FeedHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		1F8F4D391EB2665000CDCB72 /* FeedImageContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedImageContentTableViewCell.h; sourceTree = "<group>"; };
+		1F8F4D3A1EB2665000CDCB72 /* FeedImageContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedImageContentTableViewCell.m; sourceTree = "<group>"; };
+		1F8F4D3B1EB2665000CDCB72 /* FeedImageContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedImageContentTableViewCell.xib; sourceTree = "<group>"; };
+		1F8F4D3E1EB2678700CDCB72 /* FeedButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedButtonTableViewCell.h; sourceTree = "<group>"; };
+		1F8F4D3F1EB2678700CDCB72 /* FeedButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedButtonTableViewCell.m; sourceTree = "<group>"; };
+		1F8F4D401EB2678700CDCB72 /* FeedButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedButtonTableViewCell.xib; sourceTree = "<group>"; };
+		1F8F4D431EB275E700CDCB72 /* FeedCaptionContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCaptionContentTableViewCell.h; sourceTree = "<group>"; };
+		1F8F4D441EB275E700CDCB72 /* FeedCaptionContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCaptionContentTableViewCell.m; sourceTree = "<group>"; };
+		1F8F4D451EB275E700CDCB72 /* FeedCaptionContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCaptionContentTableViewCell.xib; sourceTree = "<group>"; };
+		1F8F4D481EB2781700CDCB72 /* FeedSeparatorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedSeparatorTableViewCell.h; sourceTree = "<group>"; };
+		1F8F4D491EB2781700CDCB72 /* FeedSeparatorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedSeparatorTableViewCell.m; sourceTree = "<group>"; };
+		1F8F4D4A1EB2781700CDCB72 /* FeedSeparatorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedSeparatorTableViewCell.xib; sourceTree = "<group>"; };
+		1F8F4D521EB27D0700CDCB72 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		1F8F4D531EB27D0700CDCB72 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		1F8F4D541EB27D0700CDCB72 /* FeedTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewController.xib; sourceTree = "<group>"; };
+		1F8F4D571EB28D6800CDCB72 /* FeedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewModel.h; sourceTree = "<group>"; };
+		1F8F4D581EB28D6800CDCB72 /* FeedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewModel.m; sourceTree = "<group>"; };
+		1F8F4D5A1EB2950300CDCB72 /* FeedViewModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewModelDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +184,12 @@
 		1F4800881EB1B24300D59AAD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1F4800911EB1F16A00D59AAD /* MainFeedTableViewCell.xib */,
+				1F8F4D541EB27D0700CDCB72 /* FeedTableViewController.xib */,
+				1F8F4D4D1EB27C3B00CDCB72 /* Header */,
+				1F8F4D4E1EB27C5800CDCB72 /* ImageContent */,
+				1F8F4D4F1EB27C6F00CDCB72 /* Button */,
+				1F8F4D501EB27C8F00CDCB72 /* CaptionContent */,
+				1F8F4D511EB27CCA00CDCB72 /* Separator */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -163,6 +197,7 @@
 		1F4800891EB1B2BD00D59AAD /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				1F8F4D5A1EB2950300CDCB72 /* FeedViewModelDelegate.h */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -170,8 +205,8 @@
 		1F48008A1EB1B2C600D59AAD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1F48008F1EB1F16A00D59AAD /* MainFeedTableViewCell.h */,
-				1F4800901EB1F16A00D59AAD /* MainFeedTableViewCell.m */,
+				1F8F4D521EB27D0700CDCB72 /* FeedTableViewController.h */,
+				1F8F4D531EB27D0700CDCB72 /* FeedTableViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -179,6 +214,8 @@
 		1F48008B1EB1B2D000D59AAD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1F8F4D571EB28D6800CDCB72 /* FeedViewModel.h */,
+				1F8F4D581EB28D6800CDCB72 /* FeedViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -189,6 +226,56 @@
 				1F48008D1EB1B3B500D59AAD /* MainFeedMockup.xib */,
 			);
 			name = Mockup;
+			sourceTree = "<group>";
+		};
+		1F8F4D4D1EB27C3B00CDCB72 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F4D341EB2621100CDCB72 /* FeedHeaderTableViewCell.h */,
+				1F8F4D351EB2621100CDCB72 /* FeedHeaderTableViewCell.m */,
+				1F8F4D361EB2621100CDCB72 /* FeedHeaderTableViewCell.xib */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		1F8F4D4E1EB27C5800CDCB72 /* ImageContent */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F4D391EB2665000CDCB72 /* FeedImageContentTableViewCell.h */,
+				1F8F4D3A1EB2665000CDCB72 /* FeedImageContentTableViewCell.m */,
+				1F8F4D3B1EB2665000CDCB72 /* FeedImageContentTableViewCell.xib */,
+			);
+			name = ImageContent;
+			sourceTree = "<group>";
+		};
+		1F8F4D4F1EB27C6F00CDCB72 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F4D3E1EB2678700CDCB72 /* FeedButtonTableViewCell.h */,
+				1F8F4D3F1EB2678700CDCB72 /* FeedButtonTableViewCell.m */,
+				1F8F4D401EB2678700CDCB72 /* FeedButtonTableViewCell.xib */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		1F8F4D501EB27C8F00CDCB72 /* CaptionContent */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F4D431EB275E700CDCB72 /* FeedCaptionContentTableViewCell.h */,
+				1F8F4D441EB275E700CDCB72 /* FeedCaptionContentTableViewCell.m */,
+				1F8F4D451EB275E700CDCB72 /* FeedCaptionContentTableViewCell.xib */,
+			);
+			name = CaptionContent;
+			sourceTree = "<group>";
+		};
+		1F8F4D511EB27CCA00CDCB72 /* Separator */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F4D481EB2781700CDCB72 /* FeedSeparatorTableViewCell.h */,
+				1F8F4D491EB2781700CDCB72 /* FeedSeparatorTableViewCell.m */,
+				1F8F4D4A1EB2781700CDCB72 /* FeedSeparatorTableViewCell.xib */,
+			);
+			name = Separator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,11 +384,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8F4D381EB2621100CDCB72 /* FeedHeaderTableViewCell.xib in Resources */,
 				1F4800651EB1A67500D59AAD /* LaunchScreen.storyboard in Resources */,
 				1F4800621EB1A67500D59AAD /* Assets.xcassets in Resources */,
+				1F8F4D561EB27D0700CDCB72 /* FeedTableViewController.xib in Resources */,
+				1F8F4D421EB2678700CDCB72 /* FeedButtonTableViewCell.xib in Resources */,
+				1F8F4D471EB275E700CDCB72 /* FeedCaptionContentTableViewCell.xib in Resources */,
 				1F4800601EB1A67500D59AAD /* Main.storyboard in Resources */,
+				1F8F4D4C1EB2781700CDCB72 /* FeedSeparatorTableViewCell.xib in Resources */,
 				1F48008E1EB1B3B500D59AAD /* MainFeedMockup.xib in Resources */,
-				1F4800931EB1F16A00D59AAD /* MainFeedTableViewCell.xib in Resources */,
+				1F8F4D3D1EB2665000CDCB72 /* FeedImageContentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +420,14 @@
 			files = (
 				1F48005D1EB1A67500D59AAD /* ViewController.m in Sources */,
 				1F48005A1EB1A67500D59AAD /* AppDelegate.m in Sources */,
-				1F4800921EB1F16A00D59AAD /* MainFeedTableViewCell.m in Sources */,
+				1F8F4D591EB28D6800CDCB72 /* FeedViewModel.m in Sources */,
+				1F8F4D371EB2621100CDCB72 /* FeedHeaderTableViewCell.m in Sources */,
+				1F8F4D411EB2678700CDCB72 /* FeedButtonTableViewCell.m in Sources */,
+				1F8F4D461EB275E700CDCB72 /* FeedCaptionContentTableViewCell.m in Sources */,
+				1F8F4D3C1EB2665000CDCB72 /* FeedImageContentTableViewCell.m in Sources */,
 				1F4800571EB1A67500D59AAD /* main.m in Sources */,
+				1F8F4D4B1EB2781700CDCB72 /* FeedSeparatorTableViewCell.m in Sources */,
+				1F8F4D551EB27D0700CDCB72 /* FeedTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +657,7 @@
 				1F4800811EB1A67500D59AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F4800821EB1A67500D59AAD /* Build configuration list for PBXNativeTarget "Feed-iOS-MVVMTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +666,7 @@
 				1F4800841EB1A67500D59AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F4800851EB1A67500D59AAD /* Build configuration list for PBXNativeTarget "Feed-iOS-MVVMUITests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +675,7 @@
 				1F4800871EB1A67500D59AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

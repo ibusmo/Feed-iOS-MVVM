@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="FeedHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyd-iB-y87" userLabel="Header View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcK-eT-ZTq" userLabel="Time Label">
+                                <rect key="frame" x="356" y="12" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="85k-iQ-Njj"/>
+                                    <constraint firstAttribute="height" constant="21" id="L3b-fo-756"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Omsub Sukkhee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKR-zc-yW9" userLabel="Username Label">
+                                <rect key="frame" x="53.333333333333343" y="12" width="294.66666666666663" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="g5x-2q-3VF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE9-yD-UVk" userLabel="Avatar Button">
+                                <rect key="frame" x="8" y="3" width="37.333333333333336" height="37.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BE9-yD-UVk" secondAttribute="height" multiplier="1:1" id="aCn-4r-WbN"/>
+                                </constraints>
+                                <state key="normal" image="avatar_bear"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BE9-yD-UVk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qyd-iB-y87" secondAttribute="top" constant="3" id="2i5-3V-r6B"/>
+                            <constraint firstItem="BE9-yD-UVk" firstAttribute="centerY" secondItem="qyd-iB-y87" secondAttribute="centerY" id="E9j-Y1-Kny"/>
+                            <constraint firstAttribute="trailing" secondItem="mcK-eT-ZTq" secondAttribute="trailing" constant="8" id="G1c-xM-b7e"/>
+                            <constraint firstItem="BE9-yD-UVk" firstAttribute="leading" secondItem="qyd-iB-y87" secondAttribute="leading" constant="8" id="cnX-8W-0M0"/>
+                            <constraint firstItem="mcK-eT-ZTq" firstAttribute="leading" secondItem="UKR-zc-yW9" secondAttribute="trailing" constant="8" id="jrB-k7-Qe2"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BE9-yD-UVk" secondAttribute="bottom" constant="3" id="r4L-ab-bbG"/>
+                            <constraint firstItem="mcK-eT-ZTq" firstAttribute="centerY" secondItem="qyd-iB-y87" secondAttribute="centerY" id="tBL-2E-54N"/>
+                            <constraint firstItem="UKR-zc-yW9" firstAttribute="centerY" secondItem="qyd-iB-y87" secondAttribute="centerY" id="wko-4u-TW8"/>
+                            <constraint firstItem="UKR-zc-yW9" firstAttribute="leading" secondItem="BE9-yD-UVk" secondAttribute="trailing" constant="8" id="xJy-xb-bxr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qyd-iB-y87" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HbG-R1-bQA"/>
+                    <constraint firstAttribute="bottom" secondItem="qyd-iB-y87" secondAttribute="bottom" id="QsU-pt-Zkc"/>
+                    <constraint firstItem="qyd-iB-y87" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cIB-4J-pch"/>
+                    <constraint firstAttribute="trailing" secondItem="qyd-iB-y87" secondAttribute="trailing" id="nfl-0z-wTJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="32.5" y="67"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar_bear" width="165" height="167"/>
+    </resources>
+</document>
