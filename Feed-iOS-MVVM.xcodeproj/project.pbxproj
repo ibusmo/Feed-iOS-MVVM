@@ -190,9 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				1F8F4D541EB27D0700CDCB72 /* FeedTableViewController.xib */,
-				1FCE1EBB1EB2FD04005EB28C /* FeedTableViewCell.h */,
-				1FCE1EBC1EB2FD04005EB28C /* FeedTableViewCell.m */,
-				1FCE1EBD1EB2FD04005EB28C /* FeedTableViewCell.xib */,
+				1FCE1EC01EB31E21005EB28C /* FeedCell */,
 				1F8F4D4D1EB27C3B00CDCB72 /* Header */,
 				1F8F4D4E1EB27C5800CDCB72 /* ImageContent */,
 				1F8F4D4F1EB27C6F00CDCB72 /* Button */,
@@ -284,6 +282,16 @@
 				1F8F4D4A1EB2781700CDCB72 /* FeedSeparatorTableViewCell.xib */,
 			);
 			name = Separator;
+			sourceTree = "<group>";
+		};
+		1FCE1EC01EB31E21005EB28C /* FeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE1EBB1EB2FD04005EB28C /* FeedTableViewCell.h */,
+				1FCE1EBC1EB2FD04005EB28C /* FeedTableViewCell.m */,
+				1FCE1EBD1EB2FD04005EB28C /* FeedTableViewCell.xib */,
+			);
+			name = FeedCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
