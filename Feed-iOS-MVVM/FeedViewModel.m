@@ -7,10 +7,12 @@
 //
 
 #import "FeedViewModel.h"
+#import "RuntimeInteractor.h"
 
 @interface FeedViewModel()
 
 @property (nonatomic, weak) id<FeedViewModelDelegate> delegate;
+@property (nonatomic, strong) id<Interactor> inteactor;
 
 @property (nonatomic, strong) NSArray<NSString *> *posts;
 
@@ -21,14 +23,34 @@
 - (instancetype)initWithDelegate:(id<FeedViewModelDelegate>)delegate {
     self = [self init];
     if(self) {
-        self.posts = [[NSArray alloc] init];
         self.delegate = delegate;
+        self.inteactor = [[RuntimeInteractor alloc] init];
+        self.posts = [[NSArray alloc] init];
     }
     
     return self;
 }
 
+- (void)usingInteactor:(id<Interactor>)inteactor {
+    self.inteactor = inteactor;
+}
+
 - (void)refreshData {
+    void (^OnDataComplete)(NSDictionary *) = ^(NSDictionary *responnse) {
+        NSMutableArray *posts = [[NSMutableArray alloc] init];
+        for (id post in responnse[@"posts"]) {
+            NSLog(@"%@\n", post);
+        }
+        self.posts = posts;
+        [self.delegate onDataDidLoad];
+    };
+    
+    void (^OnDataError)(NSString *) = ^(NSString *errorMessage) {
+        [self.delegate onDataDidLoadErrorWithMessage:errorMessage];
+    };
+    
+    [self.inteactor getPostsWithComplete:OnDataComplete andError:OnDataError];
+    
     NSArray *posts = @[@"omsub", @"omsub2", @"omsub3", @"omsub4"];
     self.posts = posts;
     [self.delegate onDataDidLoad];
@@ -38,30 +60,8 @@
     return self.posts.count;
 }
 
-- (NSInteger)rowsPerPost:(NSInteger)index {
-    return 5;
-}
-
 - (NSString *)cellTypeForIndex:(NSInteger)index {
-    switch (index) {
-        case 0:
-            return @"feed-header";
-            
-        case 1:
-            return @"feed-image";
-            
-        case 2:
-            return @"feed-button";
-            
-        case 3:
-            return @"feed-caption";
-            
-        case 4:
-            return @"feed-separator";
-            
-        default:
-            return @"feed-separator";
-    }
+    return @"feed-cell";
 }
 
 @end

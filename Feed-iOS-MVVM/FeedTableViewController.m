@@ -24,21 +24,22 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
     [self initRegisterCell];
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 540.0;
+}
+
+- (void)initRegisterCell {
+    [self.tableView registerNib:[UINib nibWithNibName:@"FeedTableViewCell" bundle:nil] forCellReuseIdentifier:@"feed-cell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FeedSeparatorTableViewCell" bundle:nil] forCellReuseIdentifier:@"feed-separator-cell"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [self.viewModel refreshData];
-}
-
-- (void)initRegisterCell {
-    [self.tableView registerNib:[UINib nibWithNibName:@"FeedHeaderTableViewCell" bundle:nil] forCellReuseIdentifier:@"feed-header"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"FeedImageContentTableViewCell" bundle:nil] forCellReuseIdentifier:@"feed-image"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"FeedButtonTableViewCell" bundle:nil] forCellReuseIdentifier:@"feed-button"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"FeedCaptionContentTableViewCell" bundle:nil] forCellReuseIdentifier:@"feed-caption"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"FeedSeparatorTableViewCell" bundle:nil] forCellReuseIdentifier:@"feed-separator"];
 }
 
 #pragma mark - ViewModel Delegate
@@ -54,39 +55,21 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.viewModel numberOfPosts];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.viewModel rowsPerPost:section];
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self.viewModel cellTypeForIndex:indexPath.row]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"feed-cell"];
     
     if(!cell) {
         return [[UITableViewCell alloc] initWithFrame:CGRectZero];
     }
     
-    [cell setNeedsLayout];
-    [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
     
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self.viewModel cellTypeForIndex:indexPath.row]];
-    
-    if(!cell) {
-        return 0.0;
-    }
-    
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
-    
-    return cell.bounds.size.height;
-}
 
 @end

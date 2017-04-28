@@ -8,16 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#import "Interactor.h"
 #import "FeedViewModelDelegate.h"
 
 @interface FeedViewModel : NSObject
 
 - (instancetype)initWithDelegate:(id<FeedViewModelDelegate>)delegate;
+- (void)usingInteactor:(id<Interactor>)inteactor;
 
 - (void)refreshData;
 
 - (NSInteger)numberOfPosts;
-- (NSInteger)rowsPerPost:(NSInteger)index;
 - (NSString *)cellTypeForIndex:(NSInteger)index;
 
 @end

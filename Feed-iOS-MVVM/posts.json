@@ -1,0 +1,40 @@
+{
+    "posts":[
+        {
+            "id": "1",
+            "user_id": "om1",
+            "username": "Omsub 111",
+            "userPhoto": "avatar_bear",
+            "image_content": "food1",
+            "like_count": 18,
+            "comment_count": 1,
+            "isStar": false,
+            "caption": "Such a pastel cake for my holiday, yummy !",
+            "post_time": "12:10"
+        },
+        {
+            "id": "2",
+            "user_id": "om2",
+            "username": "Omsub 222",
+            "userPhoto": "avatar_bear",
+            "image_content": "food2",
+            "like_count": 1,
+            "comment_count": 3,
+            "isStar": false,
+            "caption": "Such a pastel cake for my holiday, yummy !",
+            "post_time": "12:10"
+        },
+        {
+            "id": "3",
+            "user_id": "om3",
+            "username": "Omsub 333",
+            "userPhoto": "avatar_bear",
+            "image_content": "food3",
+            "like_count": 3,
+            "comment_count": 7,
+            "isStar": false,
+            "caption": "Such a pastel cake for my holiday, yummy !",
+            "post_time": "12:10"
+        }
+    ]
+}

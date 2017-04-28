@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="540" id="KGk-i7-Jjw" customClass="FeedTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="541"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
@@ -74,7 +74,7 @@
                         <constraints>
                             <constraint firstItem="FsN-rl-sQH" firstAttribute="top" secondItem="9L2-Fo-MKu" secondAttribute="top" id="4Hi-YB-5rb"/>
                             <constraint firstAttribute="bottom" secondItem="FsN-rl-sQH" secondAttribute="bottom" id="Kga-xM-IhB"/>
-                            <constraint firstAttribute="width" secondItem="9L2-Fo-MKu" secondAttribute="height" multiplier="1:1" id="Y5c-g0-nt2"/>
+                            <constraint firstAttribute="width" secondItem="9L2-Fo-MKu" secondAttribute="height" multiplier="1:1" id="TtL-ks-L9X"/>
                             <constraint firstItem="FsN-rl-sQH" firstAttribute="leading" secondItem="9L2-Fo-MKu" secondAttribute="leading" id="aPL-ef-KMO"/>
                             <constraint firstAttribute="trailing" secondItem="FsN-rl-sQH" secondAttribute="trailing" id="fzX-qs-DBB"/>
                         </constraints>
@@ -141,11 +141,10 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTI-Ql-kcU" userLabel="Caption View">
-                        <rect key="frame" x="0.0" y="494" width="414" height="46"/>
+                        <rect key="frame" x="0.0" y="493.99999999999994" width="414" height="45.666666666666572"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kye-RW-ixP">
-                                <rect key="frame" x="15" y="4" width="384" height="27"/>
-                                <string key="text">Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kye-RW-ixP">
+                                <rect key="frame" x="15" y="4" width="384" height="26.666666666666629"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -176,7 +175,7 @@
                     <constraint firstItem="VTI-Ql-kcU" firstAttribute="top" secondItem="WOk-bP-WJV" secondAttribute="bottom" id="rgV-sN-beu"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="23" y="307.5"/>
+            <point key="canvasLocation" x="23" y="306"/>
         </tableViewCell>
     </objects>
     <resources>
