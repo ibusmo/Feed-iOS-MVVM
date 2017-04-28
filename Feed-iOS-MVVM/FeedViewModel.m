@@ -64,26 +64,4 @@
     }
 }
 
-- (CGFloat)cellHeightForIndex:(NSInteger)index {
-    switch (index) {
-        case 0:
-            return 44.0;
-            
-        case 1:
-            return [UIScreen mainScreen].bounds.size.width;
-            
-        case 2:
-            return 32.0;
-            
-        case 3:
-            return 36.0;
-            
-        case 4:
-            return 5.0;
-            
-        default:
-            return 5.0;
-    }
-}
-
 @end

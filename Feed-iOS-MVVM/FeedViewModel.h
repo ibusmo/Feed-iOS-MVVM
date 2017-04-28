@@ -19,6 +19,5 @@
 - (NSInteger)numberOfPosts;
 - (NSInteger)rowsPerPost:(NSInteger)index;
 - (NSString *)cellTypeForIndex:(NSInteger)index;
-- (CGFloat)cellHeightForIndex:(NSInteger)index;
 
 @end

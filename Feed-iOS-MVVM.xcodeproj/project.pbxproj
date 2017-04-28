@@ -29,6 +29,8 @@
 		1F8F4D551EB27D0700CDCB72 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D531EB27D0700CDCB72 /* FeedTableViewController.m */; };
 		1F8F4D561EB27D0700CDCB72 /* FeedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F4D541EB27D0700CDCB72 /* FeedTableViewController.xib */; };
 		1F8F4D591EB28D6800CDCB72 /* FeedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F4D581EB28D6800CDCB72 /* FeedViewModel.m */; };
+		1FCE1EBE1EB2FD04005EB28C /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1EBC1EB2FD04005EB28C /* FeedTableViewCell.m */; };
+		1FCE1EBF1EB2FD04005EB28C /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE1EBD1EB2FD04005EB28C /* FeedTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,9 @@
 		1F8F4D571EB28D6800CDCB72 /* FeedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewModel.h; sourceTree = "<group>"; };
 		1F8F4D581EB28D6800CDCB72 /* FeedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewModel.m; sourceTree = "<group>"; };
 		1F8F4D5A1EB2950300CDCB72 /* FeedViewModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewModelDelegate.h; sourceTree = "<group>"; };
+		1FCE1EBB1EB2FD04005EB28C /* FeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewCell.h; sourceTree = "<group>"; };
+		1FCE1EBC1EB2FD04005EB28C /* FeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewCell.m; sourceTree = "<group>"; };
+		1FCE1EBD1EB2FD04005EB28C /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				1F8F4D541EB27D0700CDCB72 /* FeedTableViewController.xib */,
+				1FCE1EBB1EB2FD04005EB28C /* FeedTableViewCell.h */,
+				1FCE1EBC1EB2FD04005EB28C /* FeedTableViewCell.m */,
+				1FCE1EBD1EB2FD04005EB28C /* FeedTableViewCell.xib */,
 				1F8F4D4D1EB27C3B00CDCB72 /* Header */,
 				1F8F4D4E1EB27C5800CDCB72 /* ImageContent */,
 				1F8F4D4F1EB27C6F00CDCB72 /* Button */,
@@ -392,6 +400,7 @@
 				1F8F4D471EB275E700CDCB72 /* FeedCaptionContentTableViewCell.xib in Resources */,
 				1F4800601EB1A67500D59AAD /* Main.storyboard in Resources */,
 				1F8F4D4C1EB2781700CDCB72 /* FeedSeparatorTableViewCell.xib in Resources */,
+				1FCE1EBF1EB2FD04005EB28C /* FeedTableViewCell.xib in Resources */,
 				1F48008E1EB1B3B500D59AAD /* MainFeedMockup.xib in Resources */,
 				1F8F4D3D1EB2665000CDCB72 /* FeedImageContentTableViewCell.xib in Resources */,
 			);
@@ -419,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F48005D1EB1A67500D59AAD /* ViewController.m in Sources */,
+				1FCE1EBE1EB2FD04005EB28C /* FeedTableViewCell.m in Sources */,
 				1F48005A1EB1A67500D59AAD /* AppDelegate.m in Sources */,
 				1F8F4D591EB28D6800CDCB72 /* FeedViewModel.m in Sources */,
 				1F8F4D371EB2621100CDCB72 /* FeedHeaderTableViewCell.m in Sources */,
