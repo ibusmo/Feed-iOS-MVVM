@@ -1,2 +1,5 @@
 # Feed-iOS-MVVM
-![](https://media.giphy.com/media/mNVR4iHSR3puw/giphy.gif)
+
+Preview of MVVM TableViewController
+
+![MVVM Screen](https://github.com/ibusmo/Feed-iOS-MVVM/blob/master/mvvm.GIF)
