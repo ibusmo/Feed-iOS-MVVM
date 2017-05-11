@@ -8,6 +8,18 @@
 
 #import "FeedTableViewCell.h"
 
+@interface FeedTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UIButton *headerButton;
+@property (weak, nonatomic) IBOutlet UILabel *headerUsernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *headerTimeLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageContent;
+
+@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+
+@end
+
 @implementation FeedTableViewCell
 
 - (void)awakeFromNib {
@@ -19,6 +31,11 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setImageContentAsImagePath:(NSString *)imagePath {
+    UIImage *image = [UIImage imageNamed:imagePath];
+    [self.imageContent setImage:image];
 }
 
 @end

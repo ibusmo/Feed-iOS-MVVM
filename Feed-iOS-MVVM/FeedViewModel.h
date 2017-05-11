@@ -21,5 +21,6 @@
 
 - (NSInteger)numberOfPosts;
 - (NSString *)cellTypeForIndex:(NSInteger)index;
+- (NSString *)imageFromAssetPathForIndex:(NSInteger)index;
 
 @end

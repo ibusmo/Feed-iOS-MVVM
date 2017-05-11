@@ -10,4 +10,6 @@
 
 @interface FeedTableViewCell : UITableViewCell
 
+- (void)setImageContentAsImagePath:(NSString *)imagePath;
+
 @end

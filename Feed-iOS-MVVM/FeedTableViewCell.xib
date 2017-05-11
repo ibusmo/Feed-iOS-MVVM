@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="539"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBJ-nW-Ilv" userLabel="Header View">
@@ -141,10 +141,10 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTI-Ql-kcU" userLabel="Caption View">
-                        <rect key="frame" x="0.0" y="493.99999999999994" width="414" height="45.666666666666572"/>
+                        <rect key="frame" x="0.0" y="494" width="414" height="45"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy.Such a pastel cake for my holiday, yummy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kye-RW-ixP">
-                                <rect key="frame" x="15" y="4" width="384" height="26.666666666666629"/>
+                                <rect key="frame" x="15" y="4" width="384" height="26"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -175,6 +175,13 @@
                     <constraint firstItem="VTI-Ql-kcU" firstAttribute="top" secondItem="WOk-bP-WJV" secondAttribute="bottom" id="rgV-sN-beu"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="captionLabel" destination="kye-RW-ixP" id="wsb-BH-8hO"/>
+                <outlet property="headerButton" destination="Jdg-u1-8C5" id="Er2-V6-ZHq"/>
+                <outlet property="headerTimeLabel" destination="MxO-ox-cRM" id="cRV-dr-Sqf"/>
+                <outlet property="headerUsernameLabel" destination="K7M-a1-Ibr" id="GqF-Iu-SPn"/>
+                <outlet property="imageContent" destination="FsN-rl-sQH" id="TLZ-5n-45w"/>
+            </connections>
             <point key="canvasLocation" x="23" y="306"/>
         </tableViewCell>
     </objects>

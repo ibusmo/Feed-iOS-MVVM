@@ -8,6 +8,7 @@
 
 #import "FeedTableViewController.h"
 #import "FeedViewModel.h"
+#import "FeedTableViewCell.h"
 
 @interface FeedTableViewController ()
 
@@ -60,9 +61,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"feed-cell"];
+    NSString *cellType = [self.viewModel cellTypeForIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: cellType];
     
-    if(!cell) {
+    FeedTableViewCell *feedcell = (FeedTableViewCell *)cell;
+    if (feedcell) {
+        NSString *imagePath = [self.viewModel imageFromAssetPathForIndex:indexPath.row];
+        [feedcell setImageContentAsImagePath:imagePath];
+    } else {
         return [[UITableViewCell alloc] initWithFrame:CGRectZero];
     }
     

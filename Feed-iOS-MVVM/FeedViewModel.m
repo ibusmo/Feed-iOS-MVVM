@@ -39,7 +39,9 @@
     void (^OnDataComplete)(NSDictionary *) = ^(NSDictionary *responnse) {
         NSMutableArray *posts = [[NSMutableArray alloc] init];
         for (id post in responnse[@"posts"]) {
-            NSLog(@"%@\n", post);
+            NSString *image_content = post[@"image_content"];
+            [posts addObject:image_content];
+            NSLog(@"%@\n", image_content);
         }
         self.posts = posts;
         [self.delegate onDataDidLoad];
@@ -50,10 +52,6 @@
     };
     
     [self.inteactor getPostsWithComplete:OnDataComplete andError:OnDataError];
-    
-    NSArray *posts = @[@"omsub", @"omsub2", @"omsub3", @"omsub4"];
-    self.posts = posts;
-    [self.delegate onDataDidLoad];
 }
 
 - (NSInteger)numberOfPosts {
@@ -62,6 +60,10 @@
 
 - (NSString *)cellTypeForIndex:(NSInteger)index {
     return @"feed-cell";
+}
+
+- (NSString *)imageFromAssetPathForIndex:(NSInteger)index {
+    return self.posts[index];
 }
 
 @end
